@@ -1,0 +1,6 @@
+#!/bin/sh
+# A quick build script for lablgtk2 projects.
+
+OC=ocamlopt.opt
+
+$OC -I +lablgtk2 -o emblemmasta lablgtk.cmxa gtkInit.cmx nums.cmxa emblemmasta.ml
